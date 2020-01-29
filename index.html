@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-      <title>To-Do App</title>
-      <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!--Header-->
     <header>
       <h1 id="title">What's on the agenda today?</h1>
     </header>
     <main>
       <div class="body-container">
         <h2>Today's goals</h2>
-          <ul id="list"></ul>
-          <button id="btn-Add-Todo">Add Todo</button>
-          <input id="input" type="text">
+        <p id="date">Date</p>
+          <ul id="list">
+
+          </ul>
+          <div class="add-todo-container">
+            <button id="btn-Add-Todo">Add Todo</button>
+            <input id="input" type="text">
+            <button id="delete-all">Delete All</button>
+          </div>
       </div>
     </main>
+    <!--Footer-->
     <footer>
       <p>Copyright 2020 Andres Rodriguez</p>
     </footer>
