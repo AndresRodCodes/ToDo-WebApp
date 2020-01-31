@@ -2,6 +2,7 @@ const list = document.getElementById("list");
 const btnAddTodo = document.getElementById("btn-Add-Todo");
 const userTodo = document.getElementById("input");
 const dateElement = document.getElementById("date");
+const btnDeleteAll = document.getElementById("delete-all");
 
 const options = {weekday: "long", month : "short", day : "numeric"};
 const today = new Date();
@@ -15,5 +16,11 @@ let addToDo = () => {
     }
 }
 
-btnAddTodo.addEventListener("click", addToDo);
+let removeAllToDos = () => {
+    while(list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+}
 
+btnAddTodo.addEventListener("click", addToDo);
+btnDeleteAll.addEventListener("click", removeAllToDos);
